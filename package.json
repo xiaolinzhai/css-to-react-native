@@ -1,8 +1,10 @@
 {
-  "name": "css-to-react-native",
-  "version": "3.0.0",
+  "name": "css-to-react-native-alin",
+  "version": "3.1.0",
   "description": "Convert CSS text to a React Native stylesheet object",
   "main": "index.js",
+  "author": "a2231232",
+  "license": "MIT",
   "scripts": {
     "build": "rollup ./src/index.js -o index.js --f cjs && babel index.js -o index.js",
     "test": "jest",
@@ -10,7 +12,8 @@
     "lint": "eslint src",
     "prepublish": "npm run build",
     "precommit": "lint-staged",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "release": "npmpub"
   },
   "files": [
     "index.js",
@@ -47,7 +50,8 @@
     "jest": "^24.9.0",
     "lint-staged": "^6.1.0",
     "prettier": "^1.18.2",
-    "rollup": "^1.22.0"
+    "rollup": "^1.22.0",
+    "npmpub": "^4.1.0"
   },
   "dependencies": {
     "camelize": "^1.0.0",

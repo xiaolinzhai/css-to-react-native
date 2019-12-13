@@ -34,7 +34,7 @@ const identRe = /(^-?[_a-z][_a-z0-9-]*$)/i
 const numberRe = /^([+-]?(?:\d*\.)?\d+(?:e[+-]?\d+)?)$/i
 // Note lengthRe is sneaky: you can omit units for 0
 const lengthRe = /^(0$|(?:[+-]?(?:\d*\.)?\d+(?:e[+-]?\d+)?)(?=px$))/i
-const unsupportedUnitRe = /^([+-]?(?:\d*\.)?\d+(?:e[+-]?\d+)?(ch|em|ex|rem|vh|vw|vmin|vmax|cm|mm|in|pc|pt))$/i
+const unsupportedUnitRe = /^([+-]?(?:\d*\.)?\d+(?:e[+-]?\d+)?(ch|em|ex|rem|vh|vw|vmin|vmax|cm|mm|in|pc|pt|dp))$/i
 const angleRe = /^([+-]?(?:\d*\.)?\d+(?:e[+-]?\d+)?(?:deg|rad))$/i
 const percentRe = /^([+-]?(?:\d*\.)?\d+(?:e[+-]?\d+)?%)$/i
 
